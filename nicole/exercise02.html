@@ -8,7 +8,7 @@
     <meta name="author" content="Name Surname">
     <link rel="icon" href="media/favicon.ico">
 
-    <title>Fab Academy 2015 - Name Surname</title>
+    <title>Fab Academy 2019 - Nicole Young</title>
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -55,7 +55,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html">Name Surname</a>
+          <a class="navbar-brand" href="index.html">Nicole Young</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
@@ -87,39 +87,118 @@
     
         </div>   
      
-    <h3></h3>
-        
-	<p>
+    <h2>The steps I took to create this website.</h2>
+       
+        <h3>1.Create a GitHub account</h3>
+	<p>I went to Git and just did it. Easy peasy lemon squeezy.
 	</p>
     
     
-    <h3></h3>
+    <h3>2. Install Git</h3>
         
-	<p>
-	</p>
+        <p>For this I watched a couple of Git tutorials </p>
 	
-	<h3></h3>
+	<h3>3. Clone the Repository in GitHub</h3>
         
-	<p>
-	</p>
+	<p>i went in to the terminal on my computer and followed the steps in this very usefull
+        <a href="https://www.webtoons.com/en/challenge/aftermath/list?title_no=290733">Website</a> by Lucio Guimaraes.</p>
      
-	<h3></h3>
+	<h3>4. Working with your Repository </h3>
         
-	<p>
-    </p> 
-    
-    <h3></h3>
+	<p>first i needed to create my ssh key with this command;
+    </p>   
         
-	<p>
+        <pre class="prettyprint linenums">ssh-keygen -t rsa -b 4096 -C "your_email@domain.com"</pre>
+
+        <p>With that command it will generate the SSH key and the label of the key will be whatever you include inside the quotes</p>
+        
+        <pre class="prettyprint linenums">Generating public/private rsa key pair.
+Enter file in which to save the key (/Users/someone/.ssh/id_rsa):
+</pre>
+        <p>After a few seconds a message appeared and i chose a new typing a location and a new file name.</p>
+        
+        <pre class="prettyprint linenums">Enter file in which to save the key (/Users/someone/.ssh/id_rsa): /Users/someone/.ssh/id_rsafab
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /Users/someone/.ssh/id_rsafab.
+Your public key has been saved in /Users/someone/.ssh/id_rsafab.pub.
+The key fingerprint is:
+SHA256:IheXdVbB4DChb7Lyo5nJPHhNyExDKAFw5kADUTMR7MU your_email@domain.com
+The key's randomart image is:
++---[RSA 4096]----+
+|XBX= .    =.++o. |
+| =+oE .  + *  .  |
+| ..o .. +   .    |
+|  .   oo .       |
+|    .+ooS o      |
+|     o+..+       |
+|     ..o.        |
+|    .oo*o        |
+|     .Bo..       |
++----[SHA256]-----+
+
+</pre>
+        <p>And to show that my ssh key running i used this command;</p>
+        
+        
+        <pre class="prettyprint linenums">$ cat ~/.ssh/id_rsafab.pub</pre>
+         
+        <p>Next i can selected the text on the screen that would look like this</p>
+        
+        <pre class="prettyprint linenums">ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDRdz+KsRwD2jgojGESZzVQNtFT0uWLGZAieKRNMy4ytav//ABgEB5eAWFTU/YfjQn2apnt+YgXC7aWfjk8Ta5/AQblQ2r/randomfakekeyrandomfakekeyrandomfakekeyrandomfakekeyrandomfakekeyrandomfakekeyrandomfakekeyrandomfakekeyrandomfakekey+rEk6OvIq5F46sKZclXdCLFbj4b9CP5wlFVWm/vq/tgeEbc701587xVCSq/7Ssqv5GNbipbq8eGElKiM4J7h1xlEJmSb06uuqk7PswQjDhV2RFHTl6sNM45qJw30y9O3WkfddFmW5nQ8roP880ef0rvvWK51nvUpmm37rIrHa+rdFpPc9U0bRZ5BhYpp/wMnVHLmZB8W/9Wf2TN0TD/H1AWjvQ1O2EJxKn7GStVGUzopCcIwt+jEjcMZRC/pRZnvEjH30FAFv5F+kYQwmsKcNuZz+qLWF8D5sjVySHSdERLJ3Y7h4ObCJt0ll5+NJ7syf1S7gCotvT910Evorq1f2jb4l6Lt1gJz7uXA03va0HhaBGTKTB0mF7NRJusotyhGWncXgNTkZOkfFQ5Ps1xAcLRmB0uMt0/3MnS7ONu/TfJVuSqYqUuuUtz9hqbke4I4JsD+X7e1a4gAvsFK/nv6Usf0m8aQ== your_email@domain.com</pre>
+        
+        <p>And just to make sure that my SSh key is in default I need to let the SSH agent know where it is typing this:</p>
+        
+        <pre class="prettyprint linenums">$ eval $(ssh-agent -s)
+Agent pid 9284
+
+$ ssh-add ~/.ssh/id_rsafab
+Identity added: /Users/someone/.ssh/id_rsafab (/Users/someone/.ssh/id_rsafab)
+
+</pre>
+        
+        <p>Now that i had my ssh ket i added my key to your my profile on GitHub
+</p>
+        <h3>5. Now it was time to clone my repo and start with the "mantra"</h3>
+        
+        <p>so since i copied my ssh address,i typed the following;
 	</p>
 	
-	<p>
-	</p>
-      
-    <h3></h3>
+        <pre class="prettyprint linenums">git clone </pre>
+	<legend>with my addres in the end of the command 
+        </legend>
         
-    <p>
+    <p>Afer my repo was cloned locally i pasted a template in the directory created.
     </p>
+        <h3>6. The "MANTRA"</h3>
+        
+        <pre class="prettyprint linenums">git pull
+git add --all
+git commit -m yourmessagehere
+git push</pre>
+        <p> This series of commands would make sure:</p>
+        <ol>
+                <li>first (git pull) my git was updated with my origin</li>
+                <li>second you add all new alteration to my local branch (git add--alls)</li>
+                <li>third I committed all changes (git commit -m yourmessagehere)</li>
+                <li>and last I sent the commits to my origin with(git push)</li>
+            </ol>
+        
+       <h3>7.Copy a template</h3>
+        
+              <p>I liked  <a href="">Lucio's</a> website look so i copied his   <a href="https://github.com/openp2pdesign/FabAcademy_Template">template</a> 
+        . </p>
+        
+        <h3>8. Download Brackets and Start EDITING MY WEBSITE TEMPLATE!!</h3>
+        
+        <p>On this step i started writing all my notes and ideas on my website and deleting information on the template .</p>
+        
+        <h2>How my progress went.</h2>
+        <p>I MADE A LOT OF MISTAKES!!!! AND ONE OF MY MISTAKES WAS NOT DOCUMENTING MY MY MISTAKES SO SORRY</p>
+        
+        
+        
+        
     <!-- End of your content -->
 
     </div> <!-- /container -->
