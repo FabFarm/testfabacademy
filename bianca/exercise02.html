@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Name Surname">
+    <link rel="icon" href="media/favicon.ico">
+
+    <title>Fab Academy 2019 - Bianca young</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="media/fabacademy.css" rel="stylesheet">
+    
+    <!-- 3D files viewer -->
+    <script type="text/javascript" src="media/jsc3d_ie.min.js"></script>
+	<script type="text/javascript" src="media/jsc3d.min.js"></script>
+    <script type="text/javascript" src="media/jsc3d.webgl.js"></script>
+    <script type="text/javascript" src="media/jsc3d.touch.js"></script>
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="bootstrap/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="bootstrap/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <!-- Load the menu file -->
+    <script>
+	function menu() {
+					  $('#exercises').load("exercises-menu.html");
+					  $('#project').load("project-menu.html");
+					  $('#cclicense').load("license.html");
+					  }
+	</script>
+
+  </head>
+
+  <body onload="menu()">
+
+    <!-- Static navbar -->
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Name Surname</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="about.html">About</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Exercises <span class="caret"></span></a>
+              <ul id="exercises" class="dropdown-menu" role="menu">
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Final Project <span class="caret"></span></a>
+              <ul id="project" class="dropdown-menu" role="menu">
+              </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+
+	<!-- Insert your content here below! -->
+ <div class="jumbotron">
+        <hr>
+       <h1>Week 02</h1>
+        <h3>Project Management</h3>
+       <hr>
+       <h4>
+       Individual assignment
+        </h4>
+      <ul>
+       <li>Build a personal site describing you and your final project.</li>
+       <li>Upload it to the class archive. Work through a git tutorial.</li>
+      </ul>
+		   <h4>Learning outcomes:</h4>
+       <ul>   
+       <li>Explore and use website development tools</li>
+       <li>Identify and utilise version control protocol</li>
+     </ul>
+		 <h4>Have you:</h4>
+       <ul>   
+       <li>made a website and described how you did it</li>
+       <li>introduced yourself</li>
+       <li>documented steps for uploading files to archive</li>
+           <li>pushed to the class archive</li>
+       </ul>
+      </div>
+        <hr>
+        <h3>Software used</h3>
+	<ul style="list-style-type: disc">
+        <li>git</li>
+        <li>brakets</li>
+        <li>terminal</li>
+        </ul>
+        <hr>
+        
+        <h3>Useful links</h3>
+        <ul>
+        <li><a herf="http://fab.academany.org/2019/">
+                fab academy archieve</a></li>
+            <li><a herf="http://fabacademy.org/2019/docs/FabAcademy-Assessment/">
+                Fab Academy Assignments and Assessment</a></li>
+            <li><a herf="https://www.w3schools.com/html/">
+                HTML Tutorial - W3Schools</a></li></ul>
+        <hr>
+
+        <h3>1. create a github acount</h3>
+        
+    <p>First I went on github and created my acount with my email.</p>
+        
+    <h3>2. download git</h3>
+         <p>for this I went online and search (download git) then I downloaded git for mac.</p>
+        
+    <h3>3. clone the repository onto git</h3>
+        <p>for this part I thought it was triky, so then I went to the fab academy website and found this web site <a herf="http://fab.academany.org/2019/labs/algarve/students/lucio/exercise02.html">2016 Fab Academy Student Archives</a> that helped alot with this part and the following ones.  </p>
+        
+        <h3>4. working on my repository</h3>
+        <p>create a ssh key using this command:</p>
+        <pre class="prettyprint linenums">ssh-keygen -t rsa -b 4096 -C "your_email@domain.com"</pre>
+        
+        <p>This will generate the SSH key and the label of the key will be whatever you include inside the quotes</p>
+        
+        <pre class="prettyprint linenums">Generating public/private rsa key pair.
+Enter file in which to save the key (/Users/someone/.ssh/id_rsa):
+</pre>
+        <p>after a while a message will ask to either leave the location and name of the new SSH key as default or make a new one. I chose a new typing a location and a new file name.</p>
+        
+        <pre class="prettyprint linenums">Enter file in which to save the key (/Users/someone/.ssh/id_rsa): /Users/someone/.ssh/id_rsafab
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /Users/someone/.ssh/id_rsafab.
+Your public key has been saved in /Users/someone/.ssh/id_rsafab.pub.
+The key fingerprint is:
+SHA256:IheXdVbB4DChb7Lyo5nJPHhNyExDKAFw5kADUTMR7MU your_email@domain.com
+The key's randomart image is:
++---[RSA 4096]----+
+|XBX= .    =.++o. |
+| =+oE .  + *  .  |
+| ..o .. +   .    |
+|  .   oo .       |
+|    .+ooS o      |
+|     o+..+       |
+|     ..o.        |
+|    .oo*o        |
+|     .Bo..       |
++----[SHA256]-----+
+
+</pre>
+        <p>because my key is not default I need to let the SSH agent know where it is typing:</p>
+        
+        <pre class="prettyprint linenums">$ eval $(ssh-agent -s)
+Agent pid 9284
+
+$ ssh-add ~/.ssh/id_rsafab
+Identity added: /Users/someone/.ssh/id_rsafab (/Users/someone/.ssh/id_rsafab)
+
+</pre>
+       
+        <p>now i have my ssh key and i have added my key to my profile on GitHub.</p>
+        
+        <h3>4. Now I can clone my repo and start with the mantra</h3>
+        <p>so since i copied my ssh address,i typed the following:</p>
+        <pre class="prettyprint linenums">git clone </pre>
+        
+        <p>with my addres in the end of the command
+Afer my repo was cloned locally i pasted a template in the directory created.</p>
+        
+        <h3>5.the manta </h3>
+        <pre class="prettyprint linenums">git pull
+git add --all
+git commit -m yourmessagehere
+git push</pre>
+        
+        <p>this series of commands will make sure:</p>
+        <ol>
+                <li>first (git pull) you are updated with your origin</li>
+                <li>second you add all new alteration to your local branch (git add--alls)</li>
+                <li>third you committed all changes (git commit -m yourmessagehere)</li>
+                <li>and last you sent the commits to your origin (git push)</li>
+            </ol>
+    
+        
+        <h3>Done!</h3>
+        <hr>
+        
+        <h4>oh wait there's more 🤦‍♀️</h4>
+        <h3>6. web site and stuff</h3>
+        <p>To get an idea of what my site would look like I went to the <a herf="http://archive.fabacademy.org/archives/2016/master/students.html">2016 Fab Academy Student Archives</a> in order to have a look of what others have done.</p>
+        
+        <p>Then I found <a herf="http://fab.academany.org/2019/labs/algarve/students/lucio/exercise02.html">Lucio pentagna's website</a> that a itresting template.
+        so i downloaded his template and used it as a starting base.</p>
+       <p>then I opened the recent dowlloaded template on brakets and costomised it to my preference</p>
+        
+         <h3>now we are Done. ¯\_(ツ)_/¯</h3>
+        <p>for now 💀</p>
+        <!-- End of your content -->
+        
+    </div> <!-- /container -->
+
+	<!-- footer -->
+    
+    <footer id="footer">
+        <p id="cclicense">
+        </p>
+        <p class="license">
+        Theme: <a href="https://github.com/openp2pdesign/FabAcademy_Template">Fab Academy Template</a> by <a href="http://openp2pdesign.org">Massimo Menichinelli</a> <br>
+        Based on <a href="http://getbootstrap.com/">Twitter Bootstrap</a>+<a href="http://jquery.com/">JQuery</a>+<a href="https://code.google.com/p/google-code-prettify/">google-code-prettify</a>+<a href="http://jmblog.github.io/color-themes-for-google-code-prettify/github/">GitHub theme for google-code-prettify</a>+<a href="https://code.google.com/p/jsc3d/">JSC3D</a>+<a href="https://github.com/thegrubbsian/jquery.ganttView">jquery.ganttView</a>.
+        </p>
+    </footer>
+    
+
+	<!-- Do not touch this! -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="media/jquery-1.9.1.min.js"></script>
+    
+    <!-- Syntax Highlighter -->
+    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js">
+    </script>
+    <!-- From https://github.com/jmblog/color-themes-for-google-code-prettify -->
+    <link href="media/github.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript">
+	  !function ($) {
+		$(function(){
+		  window.prettyPrint && prettyPrint()   
+		})
+	  }(window.jQuery)
+	</script>
+	
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="bootstrap/js/ie10-viewport-bug-workaround.js"></script>
+
+  </body>
+</html>
